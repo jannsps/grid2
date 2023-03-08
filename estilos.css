@@ -1,0 +1,43 @@
+.container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1.5fr 0.5fr;
+    column-gap: 3px;
+    row-gap: 3px;
+}
+.img-alargada{
+    background-image: url('./img/alargada.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 1;
+    grid-row: 1/4;
+}
+.img-rectangular{
+    background-image: url('./img/rectangular.png');
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/4;
+    grid-row: 1;
+}
+.img-playa{
+    background-image: url('./img/photo-1488462237308-ecaa28b729d7.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+.titulo{
+    background-color: aqua;
+    text-align: center;
+    font-size: 30px;
+    grid-column: 2;
+    grid-row: 3;
+}
+.descripcion{
+    background-color: darkgoldenrod;
+    text-align: justify;
+    grid-column: 3;
+    grid-row: 2/4;
+}
